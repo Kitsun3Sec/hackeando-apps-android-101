@@ -5,4 +5,5 @@ Código fonte do livro Hackeando apps Android 101
 
 ## Sumário
 
-1. [Propósito desse livro](manuscript/proposito.md)
+1. [Propósito deste livro](manuscript/proposito.md)
+2. [Ambiente de Testes](manuscript/setup.md)
