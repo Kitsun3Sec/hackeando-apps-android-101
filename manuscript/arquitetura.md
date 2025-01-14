@@ -45,7 +45,7 @@ Um ambiente de execução Java fornecido pelo AOSP. O ART realiza a tradução d
 Uma HAL é uma camada de abstração com uma interface padrão para fornecedores de hardware implementarem. As HALs permitem que o Android seja independente em relação a implementações de drivers de nível inferior. O uso de um HAL permite implementar funcionalidades sem afetar ou modificar o sistema de nível superior. Para mais informações, consulte a visão geral do HAL.
 
 #### Daemons e bibliotecas nativos
-Os demônios nativos nessa camada incluem init, healthd, logd e storaged. Esses demônios interagem diretamente com o kernel ou outras interfaces e não dependem de uma implementação de HAL baseada no espaço do usuário.
+Os daemons nativos nessa camada incluem init, healthd, logd e storaged. Esses demônios interagem diretamente com o kernel ou outras interfaces e não dependem de uma implementação de HAL baseada no espaço do usuário.
 
 As bibliotecas nativas nessa camada incluem libc, liblog, libutils, libbinder e libselinux. Essas bibliotecas nativas interagem diretamente com o kernel ou outras interfaces e não dependem de uma implementação HAL baseada no espaço do usuário.
 
