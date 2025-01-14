@@ -39,7 +39,7 @@ Android Emulator
 ADB
 
 ```bash
-/Users/n3k00n3/Library/Android/sdk/platform-tools
+/Users/USER/Library/Android/sdk/platform-tools
 ```
 
 ##### Windows
