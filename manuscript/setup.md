@@ -12,7 +12,7 @@ A instalação é simples como qualquer outra aplicação.
 
 A instalação do Android Studio também é fácil, uma vez que segue a lógica de aplicações windows. Mas ainda assim vamos tratar dessa instalação para assim descrever a criação de AVD (Android Virtual Device).
 
-Os passos para a instalação são basicamente Next, Next e Finish como podem ser vistas na imagens abaix. É importante aceitar as licenças do Android SDK e Android SDK ARM para finalizar a instalação.
+Os passos para a instalação são basicamente Next, Next e Finish como podem ser vistas na imagens abaixo. É importante aceitar as licenças do Android SDK e Android SDK ARM para finalizar a instalação.
 
 ![alt text](image.png)
 
