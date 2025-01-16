@@ -42,10 +42,10 @@ Os serviços do sistema são componentes modulares e focados, como system_server
 Um ambiente de execução Java fornecido pelo AOSP. O ART realiza a tradução do bytecode do app em instruções específicas do processador que são executadas pelo ambiente de execução do dispositivo.
 
 #### Camada de abstração de hardware (HAL)
-Uma HAL é uma camada de abstração com uma interface padrão para fornecedores de hardware implementarem. As HALs permitem que o Android seja independente em relação a implementações de drivers de nível inferior. O uso de um HAL permite implementar funcionalidades sem afetar ou modificar o sistema de nível superior. Para mais informações, consulte a visão geral do HAL.
+Uma HAL é uma camada de abstração com uma interface padrão para fornecedores de hardware implementarem. As HALs permitem que o Android seja independente em relação a implementações de drivers de nível inferior. O uso de um HAL permite implementar funcionalidades sem afetar ou modificar o sistema de nível superior.
 
 #### Daemons e bibliotecas nativos
-Os daemons nativos nessa camada incluem init, healthd, logd e storaged. Esses demônios interagem diretamente com o kernel ou outras interfaces e não dependem de uma implementação de HAL baseada no espaço do usuário.
+Os daemons nativos nessa camada incluem init, healthd, logd e storaged. Esses daemons interagem diretamente com o kernel ou outras interfaces e não dependem de uma implementação de HAL baseada no espaço do usuário.
 
 As bibliotecas nativas nessa camada incluem libc, liblog, libutils, libbinder e libselinux. Essas bibliotecas nativas interagem diretamente com o kernel ou outras interfaces e não dependem de uma implementação HAL baseada no espaço do usuário.
 
@@ -54,6 +54,17 @@ O kernel é a parte central de qualquer sistema operacional e se comunica com o 
 
 ## Versionamento Android
 
+| Codenome | Versão | Data Lançamento         | Patch de Segurança | API|
+|----------|--------|-------------------------| ---                | -- |
+|N/A       | 1.0    | 23 de Setembro  de 2008 | N/A                | 1  |    
+|N/A       | 1.1    | 9 de Fevereiro de 2009  | N/A                | 2  |
+|Cupcake   | 1.5    | 27 de Abril de 2009     | N/A                | 3  | 
+|Donut     | 1.6    | 15 de Setembro de 2009  | N/A                | 4  |
+|Eclair    | 2.0    | 27 de Outubro de 2009   | N/A                | 5-7  |
+|Froyo     | 2.2    | 20 de Maio de 2010      | N/A                | 8  |
+|Gingerbread | 2.3  | 6 de Dezembro de 2010   | N/A                | 9-10  |
+|Honeycomb | 3.0    | 22 de Fevereiro de 2011 | N/A                | 11-13 |
+| Ice Cream | 4.0   | 18 de Outubro de 2011   | N/A                | 14-15  |
 
 
 ## Estrutura de Aplicação Android
