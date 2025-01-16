@@ -60,14 +60,55 @@ https://portswigger.net/burp/releases/professional-community-2024-1-1-6
 
 A instalação da ferramenta Jadx é bem simples, uma vez que já existe um tutorial de instalação no repositório GitHub da própria ferramenta. Basta seguir os passos, de acordo com a sua arquitetura e Sistema Operacional que podem ser vistos na seguinte URL: https://github.com/skylot/jadx?tab=readme-ov-file#install
 
-### Frida-Tools
+### Frida-Tools - Dispositivo com root
+O pacote de ferramenta frida é composto de alguns utilitários para a análise e instrumentação dinâmica. A instrumentação dinâmica é a ação de explorar o aplicativo enquanto ele está em execução (esse tema será abordado em outra seção desse e-book). As ferramentas que compõe o pacote são: frida (instrumentador dinâmico), frida-trace (permite que o pentester inpecione chamadas a funções), frida-ps (lista todos os processos (aplicativos) no dispositivo), frida-ls-devices (lista os dispositivos em que o frida (instrumentador dinâmico) pode se conectar.
 
+Mas, e ai? Como instalar esse pacote de ferramentas?
+
+O client é instalado bem facilmente, apenas por executar o comando: 
+
+```bash
+pip(2-3...) install frida-tools
+```
+e para remover, executa o comando:
+
+```bash
+pip(2-3...) uninstall frida-tools
+```
+
+Já o server, pois o tipo de comunicação do frida é client <-> server, pode ser instalado facilmente seguindo as etapas abaixo encontradas na documentação oficial do frida.
+
+![image](https://github.com/user-attachments/assets/2977483e-2868-44d2-80b5-a0d74bb782af)
+
+Explicando o passo a passo da figura:
+
+1 - Baixa o binário do frida-server no repositório oficial com base na sua arquitetura e sistema (https://github.com/frida/frida/releases)
+
+2 - Extrai o binário
+
+3 - Garante que o seu adb está com privilégio administrativo no sistema Android
+
+4 - Faz o upload do binário do frida-server para o sistema Android no diretório /data/local/tmp
+
+5 - Conceder as permissões para o binário ser executado corretamente
+
+6 - Iniciar o servidor do frida.
+
+Obs: em alguns casos pode ocorrer o seguinte:
+![image](https://github.com/user-attachments/assets/28f915f1-af76-4fc5-afed-186c42f6e635)
+
+Em situações como essas, você poderá executar os comando utilizando do adb shell "su -c comando" 
+![image](https://github.com/user-attachments/assets/243ee883-c309-481d-94eb-fe982ac76ed0)
+
+### Frida - Dispositivo sem root
 
 ### Objection
 
+### LSPosed (Old XPosed) Framework
+
+### AntiSplit
 
 ### ApkTools
-
 
 ### APK-mitm
 
