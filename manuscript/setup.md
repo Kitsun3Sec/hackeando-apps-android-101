@@ -80,24 +80,19 @@ Já o server, pois o tipo de comunicação do frida é client <-> server, pode s
 
 ![image](https://github.com/user-attachments/assets/2977483e-2868-44d2-80b5-a0d74bb782af)
 
-Explicando o passo a passo da figura:
+**Explicando o passo a passo da figura:**
 
-1 - Baixa o binário do frida-server no repositório oficial com base na sua arquitetura e sistema (https://github.com/frida/frida/releases)
-
-2 - Extrai o binário
-
-3 - Garante que o seu adb está com privilégio administrativo no sistema Android
-
-4 - Faz o upload do binário do frida-server para o sistema Android no diretório /data/local/tmp
-
-5 - Conceder as permissões para o binário ser executado corretamente
-
-6 - Iniciar o servidor do frida.
+1. Baixa o binário do frida-server no repositório oficial com base na sua arquitetura e sistema (https://github.com/frida/frida/releases);
+2. `unxz frida-server.xz` Extrai o binário;
+3. `adb root` Garante que o seu adb está com privilégio administrativo no sistema Android;
+4. `adb push frida-server /data/local/tmp/` Faz o upload do binário do frida-server para o sistema Android no diretório /data/local/tmp;
+5. `adb shell "chmod 755 /data/local/tmp/frida-server"` Concede as permissões para o binário ser executado corretamente;
+6. `adb shell "/data/local/tmp/frida-server &"` Inicia o servidor do frida.
 
 Obs: em alguns casos pode ocorrer o seguinte:
 ![image](https://github.com/user-attachments/assets/28f915f1-af76-4fc5-afed-186c42f6e635)
 
-Em situações como essas, você poderá executar os comando utilizando do adb shell "su -c comando" 
+Em situações como essas, você poderá executar os comando utilizando do adb shell "su -c comando" como podemos ver na imagem a seguir:
 ![image](https://github.com/user-attachments/assets/243ee883-c309-481d-94eb-fe982ac76ed0)
 
 ### Frida - Dispositivo sem root
